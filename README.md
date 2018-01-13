@@ -35,5 +35,5 @@ docker build . -t tracing-service
 ```
   3. In order to run the image, type:
 ```
-docker run -p 9091:9091 -t tracing-service
+docker run -p 9091:9091 -e CONFIGURATION_SERVER_IP=[CONFIGURATION SERVER HOST IP ADDRESS] -e EUREKA_IP=[EUREKA HOST IP ADDRESS] -t tracing-service
 ```

@@ -4,4 +4,4 @@ LABEL name="tracing-service" \
       organization="device-tracking-system"
 
 ADD target/tracing-service-1.0-SNAPSHOT.jar app.jar
-ENTRYPOINT ["java", "-jar", "app.jar", "--spring.config.location=classpath:pl/edu/agh/iet/dts/tracing/"]
+ENTRYPOINT ["java", "-jar", "app.jar", "--spring.config.location=classpath:pl/edu/agh/iet/dts/tracing/", "--spring.profiles.active=production"]
